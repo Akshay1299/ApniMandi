@@ -1,0 +1,39 @@
+.RightSide{
+    display: flex;
+    flex-direction: column;
+    padding-top: rem;
+    width: 95%;
+    justify-content: space-evenly;
+}
+
+.RightSide h3{
+
+    font-size: 30px;
+    padding-top: 2.8rem;
+}
+
+.RightSide h1{
+    background-color: white;
+    height: 5.5cm;
+    border-radius: 0.cm;
+}
+
+@media screen and (max-width: 1200px) {
+    .RightSide{
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .RightSide{
+        width: 100%;
+        margin-top: 0;
+    }
+    .RightSide>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

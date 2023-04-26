@@ -1,0 +1,110 @@
+.calendar {
+    /* background-color: #222222; */
+    /* background-color: "linear-gradient(180deg, #778899 0%, #000000 100%)"; */
+    background: white;
+    color:#1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 14cm;
+    /* margin-top: 2.6cm; */
+    margin-top: 20px;
+    margin-left: 60px;
+
+  }
+  
+  .heading{
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+    margin-right: 1rem;
+  }
+  
+  .calendar td {
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    width: 10rem;
+  }
+  
+  .calendar th {
+   
+    padding: 1em;
+    width: 10rem;
+    vertical-align: middle;
+    color: #0a0a0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #444444;
+  }
+  
+  .calendar td {
+    position: relative;
+  }
+  
+  .calendar td:hover {
+    background-color: #333;
+    color: #eeeeee;
+    cursor: pointer;
+    border-radius: 0.5cm;
+  }
+  
+  .calendar td:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .calendar td:hover:before {
+    transform: scale(2);
+  }
+  
+  .calendar td span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  .calendar td p {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  
+  .event-block{
+    background-color: mediumturquoise;
+    color: #333;
+    font-size: 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+
+  .calendar td.current-date {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-radius: 0.5cm;
+  }
+
+  .textClip-1{
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+  }
+
+   .heading h2{
+    padding-top: 80px;
+    text-align: center;
+    background: transparent;
+    font-family: sans-serif;
+   
+  }
